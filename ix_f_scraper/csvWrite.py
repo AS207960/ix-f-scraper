@@ -2,7 +2,7 @@ import json
 import csv
 import os
 import requests
-import ASNInfo
+from .ASNInfo import ASNInfo
 from pprint import pprint
 from networktoolkit import vendorlookup
 from ipaddress import IPv4Address, IPv6Address, ip_address
