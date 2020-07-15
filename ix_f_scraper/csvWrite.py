@@ -2,7 +2,6 @@ import json
 import csv
 import os
 import requests
-from .ASNInfo import ASNInfo
 from pprint import pprint
 from networktoolkit import vendorlookup
 from ipaddress import IPv4Address, IPv6Address, ip_address
@@ -45,8 +44,8 @@ def csvWrite(asn: int, ip: str, mac: str, vendor: str):
             raise e
 
 
-def ipLookup(asn: int, ixf: str):
-    return
+#def ipLookup(asn: int, ixf: str):
+#    return
 
 
 # Shit

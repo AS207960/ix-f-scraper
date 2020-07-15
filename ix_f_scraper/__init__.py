@@ -2,7 +2,7 @@
 
 __author__ = """Alfie Foster"""
 __email__ = "bonzi@as207960.net"
-__version__ = "0.0.5"
+__version__ = "0.0.6"
 
 from .ASNInfo import ASNInfo
 from .csvWrite import csvWrite
