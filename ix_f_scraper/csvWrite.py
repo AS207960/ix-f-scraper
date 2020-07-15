@@ -13,9 +13,9 @@ def csvWrite(asn: int, ip: str, mac: str, vendor: str):
     ipSanitised = ip_address(address=ip)
 
     if type(ipSanitised) is IPv4Address or IPv6Address:
-        fileEmpty = os.stat("output.csv").st_size == 0
         try:
             with open("output.csv", mode="a") as csvOutput:
+                fileEmpty = os.stat("output.csv").st_size == 0
                 # asn,ip,mac,speed,state,as-macro
                 fieldnames = [
                     "asn",

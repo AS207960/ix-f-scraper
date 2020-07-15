@@ -31,12 +31,12 @@ def macLookup(asn: int, ixf: str):
                         for mac in ipData["mac_addresses"]:
                             mac_vendor = vendorlookup.lookup_vendor(mac)
                             if mac_vendor is not None:
-                                csvWrite(
-                                    asn=member["asnum"],
-                                    ip=ipData["address"],
-                                    mac=mac,
-                                    vendor=mac_vendor,
-                                )
+                                #csvWrite(
+                                #    asn=member["asnum"],
+                                #    ip=ipData["address"],
+                                #    mac=mac,
+                                #    vendor=mac_vendor,
+                                #)
                                 info["v4"] = {
                                     "asn": member["asnum"],
                                     "ip": ipData["address"],
@@ -44,12 +44,12 @@ def macLookup(asn: int, ixf: str):
                                     "vendor": mac_vendor,
                                 }
                             else:
-                                csvWrite(
-                                    asn=member["asnum"],
-                                    ip=ipData["address"],
-                                    mac=mac,
-                                    vendor="Unknown",
-                                )
+                                #csvWrite(
+                                #    asn=member["asnum"],
+                                #    ip=ipData["address"],
+                                #    mac=mac,
+                                #    vendor="Unknown",
+                                #)
                                 info["v4"] = {
                                     "asn": member["asnum"],
                                     "ip": ipData["address"],
@@ -60,12 +60,12 @@ def macLookup(asn: int, ixf: str):
                         for mac in ipData["mac_addresses"]:
                             mac_vendor = vendorlookup.lookup_vendor(mac)
                             if mac_vendor is not None:
-                                csvWrite(
-                                    asn=member["asnum"],
-                                    ip=ipData["address"],
-                                    mac=mac,
-                                    vendor=mac_vendor,
-                                )
+                                #csvWrite(
+                                #    asn=member["asnum"],
+                                #    ip=ipData["address"],
+                                #    mac=mac,
+                                #    vendor=mac_vendor,
+                                #)
                                 info["v6"] = {
                                     "asn": member["asnum"],
                                     "ip": ipData["address"],
@@ -73,12 +73,12 @@ def macLookup(asn: int, ixf: str):
                                     "vendor": mac_vendor,
                                 }
                             else:
-                                csvWrite(
-                                    asn=member["asnum"],
-                                    ip=ipData["address"],
-                                    mac=mac,
-                                    vendor="Unknown",
-                                )
+                                #csvWrite(
+                                #    asn=member["asnum"],
+                                #    ip=ipData["address"],
+                                #    mac=mac,
+                                #    vendor="Unknown",
+                                #)
                                 info["v6"] = {
                                     "asn": member["asnum"],
                                     "ip": ipData["address"],
